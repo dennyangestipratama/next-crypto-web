@@ -4,17 +4,15 @@ import endpoints from '@constants/url';
 import { currencyFormatter } from '@helpers/index';
 import { usePriceChanges } from '@hooks/usePriceChanges';
 import {
-  CryptoCurrencyInterface,
   CryptoPriceInterface,
+  CryptoDataListProps,
 } from '@interface/interface';
 import { useRenderPercentage } from '@hooks/useRenderPercentage';
 
-interface TableDataProps {
-  currency: CryptoCurrencyInterface;
-  lastIndex: boolean;
-}
-
-const TableData: React.FC<TableDataProps> = ({ currency, lastIndex }) => {
+const CryptoDataListSection: React.FC<CryptoDataListProps> = ({
+  currency,
+  lastIndex,
+}) => {
   const { data: sortedCryptoData } = usePriceChanges();
   const { renderPercentage } = useRenderPercentage();
 
@@ -92,4 +90,4 @@ const TableData: React.FC<TableDataProps> = ({ currency, lastIndex }) => {
   );
 };
 
-export default TableData;
+export default CryptoDataListSection;

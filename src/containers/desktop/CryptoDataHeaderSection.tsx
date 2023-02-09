@@ -1,6 +1,6 @@
 import { desktopTableHeader } from '@data/table';
 
-const TableHeader = () => {
+const CryptoDataHeaderSection = () => {
   const lastIndex: number = desktopTableHeader.length - 1;
 
   const styledTableHeader = (index: number) => {
@@ -25,4 +25,4 @@ const TableHeader = () => {
   );
 };
 
-export default TableHeader;
+export default CryptoDataHeaderSection;

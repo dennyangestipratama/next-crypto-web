@@ -1,7 +1,7 @@
 import { CryptoCurrencyInterface } from '@interface/interface';
-import TableData from './TableData';
+import CryptoDataListSection from './CryptoDataListSection';
 
-const TableBody: React.FC<{
+const CryptoDataSection: React.FC<{
   currencies: CryptoCurrencyInterface[];
 }> = ({ currencies }) => {
   return (
@@ -12,7 +12,7 @@ const TableBody: React.FC<{
           .map((currency, index) => {
             const lastIndex: number = currencies.length - 2;
             return (
-              <TableData
+              <CryptoDataListSection
                 key={currency.currencySymbol}
                 currency={currency}
                 lastIndex={index === lastIndex}
@@ -23,4 +23,4 @@ const TableBody: React.FC<{
   );
 };
 
-export default TableBody;
+export default CryptoDataSection;

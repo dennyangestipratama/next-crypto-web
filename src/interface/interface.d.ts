@@ -57,6 +57,24 @@ interface CategoryListInterface {
   Icon: JSX.Element;
 }
 
+interface CryptoDataListProps {
+  currency: CryptoCurrencyInterface;
+  lastIndex: boolean;
+}
+interface CryptoDataListMobileProps {
+  currency: CryptoCurrencyInterface;
+  selectedPeriod: string;
+}
+interface CryptoDataSectionMobileProps {
+  currencies: CryptoCurrencyInterface[];
+  selectedPeriod: string;
+}
+
+interface DeviceTypeInterface {
+  width: number;
+  device: string;
+}
+
 export const {
   CryptoPriceInterface,
   CryptoCurrencyInterface,
@@ -66,4 +84,8 @@ export const {
   TableHeaderInterface,
   ArrowInterface,
   CategoryListInterface,
+  CryptoDataListProps,
+  CryptoDataListMobileProps,
+  CryptoDataSectionMobileProps,
+  DeviceTypeInterface,
 };

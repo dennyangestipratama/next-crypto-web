@@ -23,7 +23,11 @@ const useRenderPercentage = () => {
       );
 
     return (
-      <div className={'flex items-center align-middle justify-center'}>
+      <div
+        className={
+          'text-right lg:text-left font-semibold lg:font-normal flex items-center align-middle justify-center'
+        }
+      >
         <Arrow />
         <p
           className={`ml-1 ${
