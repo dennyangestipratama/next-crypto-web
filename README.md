@@ -1,38 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cryptocurrency Price Live Website
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This website is a platform to display the live price of popular cryptocurrencies such as Bitcoin, Ethereum, and others. It was built using Next.js, React Hooks, TypeScript, Tailwind CSS, and React-Query. The website is designed to be responsive, ensuring a great user experience on any device.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Technology Stack
+
+The following technologies were used in the development of this website:
+
+- Next.js: A React-based framework for building server-side rendered and statically exported web applications.
+
+- React Hooks: A feature in React that allows you to use state and other React features without writing a class.
+
+- TypeScript: A statically typed programming language that builds on JavaScript by adding types to the language.
+
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+
+- React-Query: A library for managing and caching asynchronous data in React.
+
+- Yarn: A package manager for JavaScript projects.
+
+## Installation and Setup
+
+1. Clone the repository:
+   ```bash
+    git clone https://github.com/dennyangestipratama/next-crypto-web.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+    cd <project-directory>
+   ```
+3. Install the required dependencies
+   ```bash
+   yarn install
+   ```
+4. Start the development server:
+   `bash
+    yarn dev
+    `
+   The website should now be accessible at [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+The project is structured as follows:
+
+```lua
+<project-directory>
+├── public
+├── src
+│   ├── components
+│   ├── constants
+│   ├── containers
+│   ├── data
+│   ├── helpers
+│   ├── hooks
+│   ├── interface
+│   ├── pages
+│   ├── screens
+│   └── styles
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc
+├── next-env.d.ts
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+└── yarn.lock
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To deploy the website, you can use a service such as Vercel or Github Pages. For more information on deploying a Next.js website, refer to the [Next.js documentation.](https://nextjs.org/docs/deployment)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Future Improvement
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Implement unit and integration testing
+- Implement husky
+- Provide Storybook
+- Add more features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Conclusion
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This website is a great platform for anyone looking to view live cryptocurrency prices. The use of modern technologies such as Next.js, React Hooks, TypeScript, Tailwind CSS, and React-Query ensure a smooth user experience and efficient data management.

@@ -11,13 +11,11 @@ const CryptoDataHeaderSection: React.FC<CryptoDataHeaderProps> = ({
   handlePeriod,
 }) => {
   return (
-    <div className='border-t border-b flex items-center p-4'>
-      <div className='text-xs font-semibold flex-1 text-custom-black-01'>
-        CRYPTO
-      </div>
-      <div className='pl-4'>
+    <div className="border-t border-b flex items-center p-4">
+      <div className="text-xs font-semibold flex-1 text-custom-black-01">CRYPTO</div>
+      <div className="pl-4">
         <select
-          className='rounded-md font-semibold text-xs p-1 border outline-none'
+          className="rounded-md font-semibold text-xs p-1 border outline-none"
           value={selectedPeriod}
           onChange={handlePeriod}
         >

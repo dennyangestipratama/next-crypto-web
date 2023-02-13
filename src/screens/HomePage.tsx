@@ -9,14 +9,12 @@ import HomeCategories from '@containers/HomeCategories';
 import { CryptoMainSection as CryptoMainSection_DESKTOP } from '@containers/desktop/CryptoMainSection';
 import { CryptoMainSection as CryptoMainSection_MOBILE } from '@containers/mobile/CryptoMainSection';
 
-const HomePage: React.FC<{ currencies: CryptoCurrencyInterface[] }> = ({
-  currencies,
-}) => {
+const HomePage: React.FC<{ currencies: CryptoCurrencyInterface[] }> = ({ currencies }) => {
   const { device } = useResponsiveness();
   const isMobile = device === deviceType.mobile;
 
   return (
-    <section className='max-w-screen-xl mx-auto lg:p-4 pb-32'>
+    <section className="max-w-screen-xl mx-auto md:p-4 pb-32">
       <HomeHeader />
       <HomeCategories />
       {isMobile && <CryptoMainSection_MOBILE currencies={currencies} />}

@@ -7,7 +7,7 @@ const CryptoMainSection: React.FC<{
 }> = ({ currencies }) => {
   return (
     <section>
-      <table className='w-full border-separate overflow-x-auto'>
+      <table className="w-full border-separate overflow-x-auto">
         <CryptoDataHeaderSection />
         <CryptoDataSection currencies={currencies} />
       </table>

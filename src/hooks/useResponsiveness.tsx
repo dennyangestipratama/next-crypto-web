@@ -1,15 +1,10 @@
-import {
-  MOBILE_DEVICE_WIDTH,
-  TABLET_DEVICE_WIDTH,
-  deviceType,
-} from '@constants/constants';
+import { MOBILE_DEVICE_WIDTH, TABLET_DEVICE_WIDTH, deviceType } from '@constants/constants';
 import { DeviceTypeInterface } from '@interface/interface';
 import { useState, useEffect } from 'react';
 
 const useResponsiveness = (): DeviceTypeInterface => {
   const [width, setWidth] = useState(0);
   const [device, setDevice] = useState<string>(deviceType.desktop);
-
   useEffect(() => {
     const handleWindowResize = () => {
       setWidth(window.innerWidth);

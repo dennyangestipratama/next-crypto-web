@@ -4,8 +4,8 @@ const CURRENCY_INTERVAL = 20_000; // 20,000ms === 20 second;
 const REVALIDATE_INTERVAL = 60 * 60 * 1; // Revalidate in an hour;
 const ERROR_REVALIDATE_INTERVAL = 20; // Revalidate in 20 second;
 
-const MOBILE_DEVICE_WIDTH = 768;
-const TABLET_DEVICE_WIDTH = 1024;
+const MOBILE_DEVICE_WIDTH = 640;
+const TABLET_DEVICE_WIDTH = 768;
 
 const deviceType = {
   mobile: 'mobile',

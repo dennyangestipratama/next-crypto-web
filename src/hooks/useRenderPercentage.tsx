@@ -8,24 +8,19 @@ const useRenderPercentage = () => {
     const isValuePlus = !isValueMin && !isZero;
 
     const Arrow = () => {
-      if (isValueMin)
-        return <ChevronDownIcon className='stroke-custom-red-00 w-4' />;
+      if (isValueMin) return <ChevronDownIcon className="stroke-custom-red-00 w-4" />;
 
-      if (isValuePlus)
-        return <ChevronUpIcon className='stroke-custom-green-00 w-4' />;
+      if (isValuePlus) return <ChevronUpIcon className="stroke-custom-green-00 w-4" />;
 
       return <div></div>;
     };
 
-    if (!percentage)
-      return (
-        <p className='flex items-center align-middle justify-center'>0.00%</p>
-      );
+    if (!percentage) return <p className="flex items-center align-middle justify-center">0.00%</p>;
 
     return (
       <div
         className={
-          'text-right lg:text-left font-semibold lg:font-normal flex items-center align-middle justify-center'
+          'text-right md:text-left font-semibold md:font-normal flex items-center align-middle justify-center'
         }
       >
         <Arrow />

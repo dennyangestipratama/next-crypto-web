@@ -17,8 +17,7 @@ const fetchPriceChanges = async () => {
     throw new Error('Something went wrong!');
   }
 
-  const responseJson: ResponseInterface<CryptoPriceInterface[]> =
-    await response.json();
+  const responseJson: ResponseInterface<CryptoPriceInterface[]> = await response.json();
 
   return responseJson;
 };
